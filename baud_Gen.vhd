@@ -4,6 +4,8 @@ use ieee.numeric_std.all;
 
 entity baud_Gen is
     generic(
+        --326 is using 50MHz/(9600 * 16)
+        -- 9 bits is needed to represent 326
         N: integer := 9;
         M: integer := 326
     );
