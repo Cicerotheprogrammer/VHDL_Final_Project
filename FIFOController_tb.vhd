@@ -105,6 +105,9 @@ sim:    process begin
         wait for clk_period;
     end loop;
     w_data <= x"FF";
+    
+    wr <= '0';
+    wait for clk_period * 2;
     rd <= '1';
     for i in 1 to 16 loop
          wait for clk_period*2;
