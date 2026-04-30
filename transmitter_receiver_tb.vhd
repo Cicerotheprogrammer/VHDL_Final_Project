@@ -98,7 +98,7 @@ begin
 
 
         data_in <= "11001100";
-        wait for 1 ms;
+        wait for 0.2 ms;
 
         transmitter_start <= '1';
         wait for CLK_PERIOD;
